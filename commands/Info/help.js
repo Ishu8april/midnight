@@ -1,6 +1,7 @@
 const { MessageEmbed } = require("discord.js");
 const { readdirSync } = require("fs");
-const prefix = require("../../config.json").prefix;
+require('dotenv').config()
+const prefix = process.env.prefix
 
 module.exports = {
   name: "help",

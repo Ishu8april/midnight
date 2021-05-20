@@ -7,12 +7,12 @@ const client = new Client({
     disableMentions: "everyone",
     partials: ["CHANNEL", "MESSAGE", "GUILD_MEMBER", "REACTION"]
 });
-const config = require('./config.json')
+require('dotenv').config()
 module.exports = client;
-const prefix = config.prefix
-const token = config.token
+const prefix = process.env.prefix
+const token = process.env.token
 
-const uri = config.mongo_uri
+const uri = process.env.mongo_uri
 mongoose.connect(uri, {
     useUnifiedTopology: true,
     useNewUrlParser: true,

@@ -1,6 +1,7 @@
 const client = require('../index')
 const blacklist = require('../models/blacklist')
-const prefix = require('../config.json').prefix
+require('dotenv').config()
+const prefix = process.env.prefix
 const db = require('../reconDB')
 
 client.on('message', async message => {
