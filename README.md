@@ -1,0 +1,3 @@
+#Midnight Discord Bot
+--------------------------
+Enjoy ;)
